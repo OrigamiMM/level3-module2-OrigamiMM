@@ -1,5 +1,5 @@
 package _00_Sorting_Algorithms;
-
+//s
 public class _00_SortedArrayChecker {
 	// 1. Write a static method called intArraySorted.
 	// This method takes in an array of integers
