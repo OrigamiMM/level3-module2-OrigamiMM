@@ -10,6 +10,7 @@ class _04_SearchTest {
 	String[] linSearch = new String[] {"one","two","three", "four", "five", "six"};
 	int[] binSearch = new int[] {14,18,24,29,31,39,71,79,91,99,100};
 	int[] interSearch = new int[] {10,20,30,40,50,60,70,80,90,100};
+	int[] exSearch = new int[] {1,4,8,16,18,19,24,27,29,31,33,39,42,48,51,55,58,64,72,81,88,90,94,99,100};
 	
 	@Test
 	void testLinearSearch() {
@@ -45,5 +46,9 @@ class _04_SearchTest {
 	void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		assertEquals(0,_03_ExponentialSearch.exponentialSearch(exSearch, 1));
+		assertEquals(7,_03_ExponentialSearch.exponentialSearch(exSearch, 27));
+		assertEquals(15,_03_ExponentialSearch.exponentialSearch(exSearch, 55));
+		assertEquals(-1,_03_ExponentialSearch.exponentialSearch(exSearch, 54));
 	}
 }
